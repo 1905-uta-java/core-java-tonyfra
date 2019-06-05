@@ -25,9 +25,11 @@ public class EvaluationServiceTest {
 	@Rule
 	public ExpectedException expectedException = ExpectedException.none();
 
+//Done 1
 	/*******************************************************************
 	 * Question 1
 	 ******************************************************************/
+
 	@Test
 	public void testAnEmptyString() {
 		assertEquals("", evaluationService.reverse(""));
@@ -53,9 +55,11 @@ public class EvaluationServiceTest {
 		assertEquals("racecar", evaluationService.reverse("racecar"));
 	}
 
+//Done 2
 	/*******************************************************************
 	 * Question 2
 	 ******************************************************************/
+
 	@Test
 	public void basic() {
 		final String phrase = "Portable Network Graphics";
@@ -84,6 +88,7 @@ public class EvaluationServiceTest {
 		assertEquals(expected, evaluationService.acronym(phrase));
 	}
 
+//Done 3
 	/*******************************************************************
 	 * Question 3
 	 ******************************************************************/
@@ -124,9 +129,11 @@ public class EvaluationServiceTest {
 		assertTrue(triangle.isScalene());
 	}
 
+//Done 4
 	/*******************************************************************
 	 * Question 4
 	 ******************************************************************/
+
 	@Test
 	public void testAValuableLetter() {
 		assertEquals(4, evaluationService.getScrabbleScore("f"));
@@ -152,9 +159,11 @@ public class EvaluationServiceTest {
 		assertEquals(41, evaluationService.getScrabbleScore("OxyphenButazone"));
 	}
 
+//Done 5
 	/*******************************************************************
 	 * Question 5
 	 ******************************************************************/
+
 	@Test
 	public void cleansTheNumber() {
 		final String expectedNumber = "2234567890";
@@ -190,9 +199,11 @@ public class EvaluationServiceTest {
 		evaluationService.cleanPhoneNumber("123-@:!-7890");
 	}
 
+// Done 6
 	/*******************************************************************
 	 * Question 6
 	 ******************************************************************/
+
 	@Test
 	public void countOneWord() {
 		Map<String, Integer> expectedWordCount = new HashMap<>();
@@ -248,9 +259,11 @@ public class EvaluationServiceTest {
 		assertEquals(expectedWordCount, actualWordCount);
 	}
 
+//Need work
 	/*******************************************************************
 	 * Question 7
 	 ******************************************************************/
+
 	@Test
 	public void findsAValueInTheMiddleOfAnArray() {
 		List<String> sortedList = Collections.unmodifiableList(Arrays.asList("1", "3", "4", "6", "8", "9", "11"));
@@ -298,9 +311,12 @@ public class EvaluationServiceTest {
 		assertEquals(5, search.indexOf(21));
 	}
 
+//Done 8
+
 	/*******************************************************************
 	 * Question 8
 	 ******************************************************************/
+
 	@Test
 	public void singleDigitsAreArmstrongNumbers() {
 		int input = 5;
@@ -335,10 +351,12 @@ public class EvaluationServiceTest {
 
 		assertTrue(evaluationService.isArmstrongNumber(input));
 	}
-	
+
+//Done 9
 	/*******************************************************************
 	 * Question 9
 	 ******************************************************************/
+
 	@Test
 	public void emptySentenceIsNotPangram() {
 		assertFalse(evaluationService.isPangram(""));
@@ -364,7 +382,8 @@ public class EvaluationServiceTest {
 		assertFalse(evaluationService.isPangram("five boxing wizards jump quickly at it"));
 	}
 
-	
+
+//Done 10
 	/*******************************************************************
 	 * Question 10
 	 ******************************************************************/
@@ -399,8 +418,9 @@ public class EvaluationServiceTest {
 		assertEquals("The quick brown fox jumps over the lazy dog.",
 				rotationalCipher.rotate("Gur dhvpx oebja sbk whzcf bire gur ynml qbt."));
 	}
-	
 
+
+//Done 11
 	/*******************************************************************
 	 * Question 11
 	 ******************************************************************/
@@ -436,9 +456,11 @@ public class EvaluationServiceTest {
 				EvaluationService.AtbashCipher.encode("The quick brown fox jumps over the lazy dog."));
 	}
 
+//Done 12
 	/*******************************************************************
 	 * Question 12
 	 ******************************************************************/
+
 	@Test
 	public void testDecodeExercism() {
 		assertEquals("exercism", EvaluationService.AtbashCipher.decode("vcvix rhn"));
@@ -464,6 +486,7 @@ public class EvaluationServiceTest {
 	/*******************************************************************
 	 * Question 13
 	 ******************************************************************/
+
 	@Test
 	@Ignore
 	public void validIsbnNumber() {
@@ -498,6 +521,7 @@ public class EvaluationServiceTest {
 	/*******************************************************************
 	 * Question 14
 	 ******************************************************************/
+
 	@Test
 	@Ignore
 	public void modernTime() {
@@ -536,6 +560,7 @@ public class EvaluationServiceTest {
 	/*******************************************************************
 	 * Question 15
 	 ******************************************************************/
+
 	@Test
 	@Ignore
 	public void testSingleAddition1() {
